@@ -3,8 +3,8 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <g-link class="navbar-brand" to="/">Start Bootstrap</g-link>
-        <button
+        <g-link class="navbar-brand" to="/">空空的博客</g-link>
+        <!-- <button
           class="navbar-toggler navbar-toggler-right"
           type="button"
           data-toggle="collapse"
@@ -13,16 +13,16 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          Menu
-          <i class="fas fa-bars"></i>
+          菜单
+          <i class="fas fa-bars"></i> -->
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <g-link class="nav-link" to="/">首页</g-link>
             </li>
             <li class="nav-item">
-              <g-link class="nav-link" to="/contact">Contact</g-link>
+              <g-link class="nav-link" to="/contact">联系我</g-link>
             </li>
           </ul>
         </div>

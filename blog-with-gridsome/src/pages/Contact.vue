@@ -123,7 +123,7 @@ export default {
       try {
         const { data } = await axios({
           method: "POST",
-          url: "http://localhost:1337/contacts",
+          url: this.baseUrl + "/contacts",
           data: this.form,
         });
         window.alert("发送成功");

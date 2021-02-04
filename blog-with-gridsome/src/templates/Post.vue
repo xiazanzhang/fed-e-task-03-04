@@ -4,7 +4,7 @@
     <header
       class="masthead"
       :style="{
-        backgroundImage: `url(http://localhost:1337${$page.post.cover.url})`,
+        backgroundImage: `url(${baseUrl + $page.post.cover.url})`,
       }"
     >
       <div class="overlay"></div>
@@ -56,17 +56,20 @@
 </page-query>
 
 <script>
-import MarkdownIt from 'markdown-it'
-const md = new MarkdownIt()
+import MarkdownIt from "markdown-it";
+const md = new MarkdownIt();
 
 export default {
-  name: 'PostPage',
+  name: "PostPage",
   methods: {
     mdToHtml(markdown) {
-      return md.render(markdown)
+      return md.render(markdown);
     },
   },
-}
+  created() {
+    console.log(this.baseUrl);
+  },
+};
 </script>
 
 <style></style>
